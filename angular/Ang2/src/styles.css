@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.st-white{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.wk-white *{
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+}
+*{
+    background-color: aqua;
+}

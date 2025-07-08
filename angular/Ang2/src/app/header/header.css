@@ -1,0 +1,16 @@
+*{
+    text-decoration: none;
+
+}
+
+#header *{
+ background-color: #092419 !important;
+  padding: 10px;
+}
+
+hr {
+  margin: 0;
+  height: 4px;
+  border-top: 1px solid beige;
+  opacity: 100%;
+}
