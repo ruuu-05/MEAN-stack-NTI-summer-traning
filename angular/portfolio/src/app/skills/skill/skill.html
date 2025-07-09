@@ -1,0 +1,17 @@
+<div class="skill mb-3">
+  <h4>{{ title }}</h4>
+  <div
+    class="progress"
+    role="progressbar"
+    [attr.aria-valuenow]="progress"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  >
+    <div
+      class="progress-bar"
+      [style.width.%]="progress"
+    >
+      {{ progress }}%
+    </div>
+  </div>
+</div>
