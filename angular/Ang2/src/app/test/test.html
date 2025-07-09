@@ -1,0 +1,20 @@
+<h1>Users</h1>
+<div class="d-flex justify-content-center mb-4">
+  <input type="text" placeholder="email" class="form-control me-2 w-auto" />
+  <button class="btn btn-primary" type="submit">Search</button>
+</div>
+
+<div class="row row-cols-2 g-4 ">
+    @for (user of users; track user.id) {
+  <div class ="col d-flex justify-content-center"><div class="card test-card " style="width: 18rem;">
+  <img [src]="user.image" class="card-img-top rounded-circle" style="border-radius: 50%;" alt="...">
+  <div class="card-body">
+    <h5 class="card-title text-white" [ngClass]="'text-bg-' + (user.role === 'admin' ? 'danger' : user.role === 'user' ? 'success' : 'warning')">{{user.role}}</h5>
+    <p class="card-text">{{user.username}}</p>
+    <p class="card-text">{{user.email}}</p>
+    <p class="card-text">{{user.phone}}</p>
+    <p class="card-text">{{user.birthDate}}</p>
+  </div>
+</div> </div>
+}
+</div>
